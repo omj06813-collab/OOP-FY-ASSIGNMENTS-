@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Book
+{
+public:
+    string title;
+    string author;
+    int price;
+
+    void show()
+    {
+        cout << "Book Title: " << title << endl;
+        cout << "Author: " << author << endl;
+        cout << "Price: " << price << endl;
+    }
+};
+
+int main()
+{
+    Book b;
+
+    b.title = "one punch man";
+    b.author = "yusuke murata";
+    b.price = 999;
+
+    b.show();
+
+    return 0;
+}
